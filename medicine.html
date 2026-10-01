@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport">
+<meta content="mobile_tab" name="shell-type">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com">
+</script>
+<script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "status-attention-border": "#FCD34D", "surface-container-highest": "#d5e3fc", "background": "#f8f9ff", "on-tertiary": "#ffffff", "canvas-background": "#F8FAFC", "secondary-fixed": "#99f3e6", "inverse-on-surface": "#eaf1ff", "surface-container-high": "#dce9ff", "surface-variant": "#d5e3fc", "status-urgent-surface": "#FEF2F2", "surface-dim": "#ccdbf3", "border-strong": "#CBD5E1", "secondary": "#006a61", "surface-container": "#e6eeff", "inverse-primary": "#9ad2c0", "border-subtle": "#E2E8F0", "on-error": "#ffffff", "on-background": "#0d1c2e", "text-secondary": "#334155", "on-secondary-fixed": "#00201d", "outline": "#707975", "on-primary": "#ffffff", "error": "#ba1a1a", "status-warning": "#EA580C", "tertiary-fixed": "#ffdcc3", "primary": "#003329", "on-surface": "#0d1c2e", "surface-bright": "#f8f9ff", "surface-card": "#FFFFFF", "text-muted": "#64748B", "status-normal": "#15803D", "on-primary-container": "#83baa9", "surface": "#f8f9ff", "on-tertiary-fixed": "#2f1500", "status-warning-border": "#FDBA74", "error-container": "#ffdad6", "surface-container-low": "#eff4ff", "on-tertiary-container": "#ff952d", "primary-fixed": "#b6eedc", "on-secondary": "#ffffff", "on-primary-fixed": "#002019", "status-attention-surface": "#FFFBEB", "secondary-fixed-dim": "#7dd6ca", "status-normal-border": "#86EFAC", "tertiary": "#472300", "inverse-surface": "#233144", "outline-variant": "#bfc9c4", "status-urgent": "#DC2626", "secondary-container": "#99f3e6", "text-primary": "#0F172A", "surface-subtle": "#F1F5F9", "on-primary-fixed-variant": "#174f42", "status-normal-surface": "#F0FDF4", "on-tertiary-fixed-variant": "#6e3900", "status-urgent-border": "#FCA5A5", "surface-tint": "#326859", "primary-fixed-dim": "#9ad2c0", "tertiary-fixed-dim": "#ffb77d", "on-surface-variant": "#404945", "primary-container": "#114b3e", "status-warning-surface": "#FFF7ED", "surface-container-lowest": "#ffffff", "on-error-container": "#93000a", "tertiary-container": "#673500", "on-secondary-container": "#007167", "on-secondary-fixed-variant": "#005049", "status-attention": "#D97706" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1rem", "gutter-sm": "0.75rem", "margin": "1rem", "space-md": "0.75rem", "space-xl": "1.5rem", "space-2xl": "2rem", "space-sm": "0.5rem", "margin-tablet": "1.5rem", "space-xs": "0.25rem", "margin-desktop": "2rem", "space-lg": "1rem" }, fontFamily: { "code-token": ["Space Grotesk"], "display": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"], "body-md": ["Be Vietnam Pro"], "headline-md": ["Space Grotesk"], "label-lg": ["Be Vietnam Pro"], "headline-sm": ["Space Grotesk"], "body-lg": ["Be Vietnam Pro"], "label-sm": ["Be Vietnam Pro"], "body-sm": ["Be Vietnam Pro"], "headline-lg": ["Space Grotesk"], "label-md": ["Be Vietnam Pro"] }, fontSize: { "code-token": ["13px", { "lineHeight": "16px", "fontWeight": "600" }], "display": ["36px", { "lineHeight": "44px", "fontWeight": "700" }], "headline-lg-mobile": ["22px", { "lineHeight": "28px", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "26px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "18px", "fontWeight": "600" }], "headline-sm": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "12px", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-lg": ["28px", { "lineHeight": "36px", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }] } } } }</script>
+<style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface flex flex-col min-h-screen antialiased selection:bg-secondary-container">
+<header class="fixed top-0 inset-x-0 z-50 bg-surface-card/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe">
+<div class="h-16 px-margin flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<img alt="AgroVet Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-EBeQ2W4vSFIhs4Y7YPasHNVER4DJarSZUvjyRWPFrJMNoL9cSTyPT0QZipOXf4XF5H8mYMKasz-0YB1t5IRsbn3mO52GzfjD5BLrOGkPlQAv3HhmfkuYiYp0eiqzzWzxN2E08KIWVKCiL48dqGu1KW5FnyKbc4wsvCf6_CO1_Z8F-uS1SN0Mn5iQNuW7xG21e2pIOMZP4KZqO-Wo8rgNiontPohYbzAwE2E8lbXSud_NLl_1xr6F">
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-text-muted tracking-wider uppercase truncate">ระบบงานสัตวบาล</span>
+<h1 class="font-headline-sm text-headline-sm text-text-primary tracking-tight truncate">ยาและเวชภัณฑ์</h1>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<button aria-label="Notifications" class="relative w-11 h-11 flex items-center justify-center rounded-full text-text-secondary hover:text-text-primary active:bg-surface-subtle transition-colors" type="button">
+<span class="material-symbols-outlined text-[24px]">notifications</span>
+<span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-status-urgent ring-2 ring-surface-card">
+</span>
+</button>
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface">
+<div class="flex flex-col w-full pb-8">
+<!-- Contextual Ambient Highlight -->
+<div class="px-margin pt-space-md pb-space-sm flex flex-col gap-space-md">
+<!-- Section 1: Quick Stock Summary Ribbon (Bento Micro-Grid) -->
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Total Medicines Metric -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-text-muted">รายการยาทั้งหมด</span>
+<span class="material-symbols-outlined text-primary text-[20px]">medication</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-text-primary">42</span>
+<span class="font-body-sm text-body-sm text-text-muted">รายการ</span>
+</div>
+<div class="mt-space-xs flex items-center gap-space-xs text-status-normal font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span class="">พร้อมจ่าย 37 รายการ</span>
+</div>
+</div>
+<!-- Stock Valuation Metric -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-text-muted">มูลค่ายาคงคลัง</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">account_balance_wallet</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-text-primary">48,500</span>
+<span class="font-body-sm text-body-sm text-text-muted">บาท</span>
+</div>
+<div class="mt-space-xs flex items-center gap-space-xs text-text-muted font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">sync</span>
+<span class="">คำนวณตาม FIFO</span>
+</div>
+</div>
+<!-- Low Stock Warning Pill/Card -->
+<div class="bg-status-warning-surface rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-status-warning">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-status-warning">
+</span>
+<span class="font-label-md text-label-md font-bold">ใกล้หมดสต็อก</span>
+</div>
+<span class="material-symbols-outlined text-[18px]">inventory_2</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-status-warning font-bold">3</span>
+<span class="font-body-sm text-body-sm text-status-warning">รายการ</span>
+</div>
+<span class="mt-space-xs font-label-sm text-label-sm text-status-warning/90">ต่ำกว่าจุดเตือนขั้นต่ำ</span>
+</div>
+<!-- FEFO Expiry Warning Pill/Card -->
+<div class="bg-status-urgent-surface rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-status-urgent">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-status-urgent animate-pulse">
+</span>
+<span class="font-label-md text-label-md font-bold">ใกล้หมดอายุ</span>
+</div>
+<span class="material-symbols-outlined text-[18px]">hourglass_top</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-status-urgent font-bold">2</span>
+<span class="font-body-sm text-body-sm text-status-urgent">รายการ</span>
+</div>
+<span class="mt-space-xs font-label-sm text-label-sm text-status-urgent/90">หลัก FEFO ต้องรีบเบิก</span>
+</div>
+</div>
+<!-- Section 2: Quick Action Buttons (Workflow B: รับเข้า / เบิกใช้) -->
+<div class="grid grid-cols-2 gap-space-sm mt-space-xs">
+<button class="flex items-center justify-center gap-space-sm py-3 px-space-md rounded-xl bg-primary text-on-primary shadow-md active:scale-[0.98] transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<div class="flex flex-col text-left">
+<span class="font-label-lg text-label-lg font-bold">รับยาเข้าใหม่</span>
+<span class="font-label-sm text-label-sm text-on-primary/80">บันทึก Lot &amp; หมดอายุ</span>
+</div>
+</button>
+<button class="flex items-center justify-center gap-space-sm py-3 px-space-md rounded-xl bg-secondary-container text-on-secondary-container shadow-sm active:scale-[0.98] transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]">outbox</span>
+<div class="flex flex-col text-left">
+<span class="font-label-lg text-label-lg font-bold">เบิก / ใช้ยา</span>
+<span class="font-label-sm text-label-sm text-on-secondary-container/80">ตัดสต็อกผูกเคส</span>
+</div>
+</button>
+</div>
+<!-- Section 5: Stock Formula Note (Section 4.4 & 26 Protocol Banner) -->
+<div class="bg-surface-container-high rounded-xl p-space-md shadow-sm flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-on-primary text-[18px]">verified_user</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-text-primary font-bold">ระบบคำนวณยอดอัตโนมัติ (Sec 4.4)</span>
+<span class="bg-primary/10 text-primary font-label-sm text-label-sm px-1.5 py-0.5 rounded">Audit Log</span>
+</div>
+<p class="font-code-token text-code-token text-secondary font-bold mt-space-xs break-all">
+          คงเหลือ = ยอดรับเข้า - ยอดใช้ - ยอดปรับออก
+        </p>
+<p class="font-body-sm text-body-sm text-text-muted mt-space-xs">
+          ห้ามแก้ไขตัวเลขคงเหลือโดยตรงเพื่อป้องกันข้อผิดพลาดทางเวชระเบียนปศุสัตว์
+        </p>
+</div>
+</div>
+<!-- Search and Instant Barcode Scanner Bar -->
+<div class="flex items-center gap-space-xs">
+<div class="flex-1 bg-surface-card rounded-xl px-space-md h-12 flex items-center gap-space-sm shadow-sm">
+<span class="material-symbols-outlined text-text-muted text-[20px]">search</span>
+<input class="w-full bg-transparent font-body-md text-body-md text-text-primary focus:outline-none placeholder:text-text-muted" placeholder="ค้นหาชื่อยา, รหัส, Lot Number..." type="text">
+</div>
+<button aria-label="สแกนบาร์โค้ดยา" class="w-12 h-12 rounded-xl bg-surface-card flex items-center justify-center text-text-secondary shadow-sm active:bg-surface-subtle transition-colors" type="button">
+<span class="material-symbols-outlined text-[24px]">qr_code_scanner</span>
+</button>
+</div>
+<!-- Section 3: Filter & Category Horizontal Tabs -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-space-xs -mx-margin px-margin">
+<button class="shrink-0 px-space-md py-2 rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-sm" type="button">
+        ทั้งหมด (42)
+      </button>
+<button class="shrink-0 px-space-md py-2 rounded-full font-label-md text-label-md bg-surface-card text-text-secondary shadow-sm active:bg-surface-subtle" type="button">
+        ยาปฏิชีวนะ (14)
+      </button>
+<button class="shrink-0 px-space-md py-2 rounded-full font-label-md text-label-md bg-surface-card text-text-secondary shadow-sm active:bg-surface-subtle" type="button">
+        ยาถ่ายพยาธิ (8)
+      </button>
+<button class="shrink-0 px-space-md py-2 rounded-full font-label-md text-label-md bg-surface-card text-text-secondary shadow-sm active:bg-surface-subtle" type="button">
+        ยาต้านอักเสบ (7)
+      </button>
+<button class="shrink-0 px-space-md py-2 rounded-full font-label-md text-label-md bg-surface-card text-text-secondary shadow-sm active:bg-surface-subtle" type="button">
+        วิตามิน/บำรุง (9)
+      </button>
+<button class="shrink-0 px-space-md py-2 rounded-full font-label-md text-label-md bg-surface-card text-text-secondary shadow-sm active:bg-surface-subtle" type="button">
+        ยาภายนอก (4)
+      </button>
+</div>
+<!-- Section 4: Medicine Item Cards with FEFO Warnings -->
+<div class="flex flex-col gap-space-md mt-space-xs">
+<!-- Item 1: Amoxicillin 20% (Low Stock Alert) -->
+<div class="bg-surface-card rounded-2xl p-space-md shadow-sm flex flex-col gap-space-md relative overflow-hidden">
+<!-- Visual Status Indicator Stripe -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-status-warning">
+</div>
+<div class="flex items-start gap-space-md">
+<!-- Thumbnail Medicine Icon/Box -->
+<div class="relative w-16 h-16 rounded-xl bg-status-warning-surface flex items-center justify-center shrink-0 overflow-hidden shadow-inner">
+<img class="w-full h-full object-cover" data-alt="A clean pharmaceutical bottle of Amoxicillin 20 percent veterinary injection with clear measurement markers in a modern clinical farm setting with crisp daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJuBTRQVoz2PGUR9P4XxjeQh6Ou1xa1Nv3dcdPN77AJeQU-1hFO_DIwgKeGuevOqf_C_3Hh66Weswt3jaZTC3n5v-dUYgrQdZmkKCnsmtBi0jD9AcFS_pUicO3ie9oq4jzsMtTo3OEK1HdIb3mS1NaBL_B6k_nGW46MoP-IlwuyfYGGNtE4-k-wQDMkzFVbvqVLBNVf73gu1Z0YC3cHiWx5APs_kp7TILm4wUO3FtaeozIHs0NhNvC">
+<span class="absolute bottom-1 right-1 bg-primary text-on-primary font-label-sm text-label-sm px-1 rounded">ยาฉีด</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-text-primary font-bold truncate">Amoxicillin 20%</h2>
+<span class="font-body-sm text-body-sm text-text-muted">แอมม็อกซี่ซิลลิน ชนิดฉีดออกฤทธิ์กว้าง</span>
+</div>
+<!-- Status Badge: Low Stock -->
+<span class="shrink-0 inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-status-warning-surface text-status-warning font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-status-warning">
+</span>
+                ใกล้หมด
+              </span>
+</div>
+<div class="mt-space-xs flex flex-wrap items-center gap-y-1 gap-x-space-md text-text-secondary font-label-sm text-label-sm">
+<span class="bg-surface-subtle px-2 py-0.5 rounded text-text-muted font-code-token text-code-token">Lot: LOT-2024-A12</span>
+<span class="">บรรจุ: 100 ml (ขวด)</span>
+</div>
+</div>
+</div>
+<!-- Inventory Metrics Table Layout -->
+<div class="bg-surface-subtle rounded-xl p-space-sm grid grid-cols-2 gap-space-sm text-center">
+<div class="flex flex-col items-center justify-center py-1">
+<span class="font-label-sm text-label-sm text-text-muted">ยอดคงเหลือสุทธิ</span>
+<div class="flex items-baseline gap-space-xs mt-0.5">
+<span class="font-headline-md text-headline-md font-bold text-status-warning">4</span>
+<span class="font-body-sm text-body-sm text-text-secondary">ขวด</span>
+</div>
+<span class="font-label-sm text-label-sm text-status-warning/80">จุดเตือน: 5 ขวด</span>
+</div>
+<div class="flex flex-col items-center justify-center py-1">
+<span class="font-label-sm text-label-sm text-text-muted">วันหมดอายุ (EXP)</span>
+<span class="font-headline-sm text-headline-sm font-bold text-text-primary mt-0.5">15/12/2025</span>
+<span class="font-label-sm text-label-sm text-status-normal">เหลือ 280 วัน</span>
+</div>
+</div>
+<!-- Micro-Actions: Dispense & Lot History -->
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 h-11 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold flex items-center justify-center gap-space-xs shadow-sm active:opacity-90" type="button">
+<span class="material-symbols-outlined text-[18px]">colorize</span>
+<span class="">เบิกใช้รักษา</span>
+</button>
+<button class="w-11 h-11 rounded-xl bg-surface-subtle text-text-secondary flex items-center justify-center active:bg-surface-container transition-colors" title="ประวัติการเคลื่อนไหว Lot" type="button">
+<span class="material-symbols-outlined text-[20px]">history</span>
+</button>
+</div>
+</div>
+<!-- Item 2: Albendazole 10% (CRITICAL FEFO Expiring Soon Alert) -->
+<div class="bg-surface-card rounded-2xl p-space-md shadow-sm flex flex-col gap-space-md relative overflow-hidden">
+<!-- Visual Urgent Stripe -->
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-status-urgent">
+</div>
+<div class="flex items-start gap-space-md">
+<div class="relative w-16 h-16 rounded-xl bg-status-urgent-surface flex items-center justify-center shrink-0 overflow-hidden shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Large white pharmaceutical gallon container of Albendazole suspension for sheep and goats in a clean agricultural dispensary" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP-5EGr-xKut7IZsDUUSPleS6bHN78dKYhuE8PKACgnSMZ7WTeEUf1haMFxYA-mDwZIzZCxXx2Ifelr5Y_f4PBf4AoW3S0KTncAhCKxJ2P_B4uQ2dKACpZLrVHgGoSOuYDEIHdNYZ-vVkrQffYO8Pi22ru3ybiopUwDyf7xE2MikILROh8QDQNqYEjyrrENXdp0D5KRnKplubxGFE-9b1d_1Ezi0re4NSg4Z4NCQMsg_b3yxjeldST">
+<span class="absolute bottom-1 right-1 bg-secondary text-on-secondary font-label-sm text-label-sm px-1 rounded">ยากิน</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-text-primary font-bold truncate">Albendazole 10%</h2>
+<span class="font-body-sm text-body-sm text-text-muted">ยาถ่ายพยาธิแกะ / แพะ ชนิดแขวนตะกอน</span>
+</div>
+</div>
+<!-- Prominent FEFO Badge (Section 4.5 & 26) -->
+<div class="mt-space-xs inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-status-urgent-surface text-status-urgent font-bold">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+<span class="">หมดอายุเร็วๆ นี้ (FEFO แนะนำใช้ก่อน)</span>
+</div>
+<div class="mt-space-xs flex flex-wrap items-center gap-y-1 gap-x-space-md text-text-secondary font-label-sm text-label-sm">
+<span class="bg-surface-subtle px-2 py-0.5 rounded text-text-muted font-code-token text-code-token">Lot: LOT-2023-B04</span>
+<span class="">บรรจุ: 1,000 ml</span>
+</div>
+</div>
+</div>
+<!-- Inventory Metrics Table Layout -->
+<div class="bg-status-urgent-surface rounded-xl p-space-sm grid grid-cols-2 gap-space-sm text-center">
+<div class="flex flex-col items-center justify-center py-1">
+<span class="font-label-sm text-label-sm text-text-muted">ยอดคงเหลือสุทธิ</span>
+<div class="flex items-baseline gap-space-xs mt-0.5">
+<span class="font-headline-md text-headline-md font-bold text-text-primary">12</span>
+<span class="font-body-sm text-body-sm text-text-secondary">แกลลอน</span>
+</div>
+<span class="font-label-sm text-label-sm text-status-normal font-bold">ปกติ (เกินขั้นต่ำ)</span>
+</div>
+<div class="flex flex-col items-center justify-center py-1">
+<span class="font-label-sm text-label-sm text-status-urgent font-bold">วันหมดอายุ (FEFO Alert)</span>
+<span class="font-headline-sm text-headline-sm font-bold text-status-urgent mt-0.5">10/11/2024</span>
+<span class="font-label-sm text-label-sm text-status-urgent font-bold">⏳ เหลือเพียง 38 วัน!</span>
+</div>
+</div>
+<!-- Single Quick Action Full Dispense Trigger -->
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 h-11 rounded-xl bg-status-urgent text-on-error font-label-lg text-label-lg font-bold flex items-center justify-center gap-space-xs shadow-md active:opacity-90" type="button">
+<span class="material-symbols-outlined text-[20px]">priority_high</span>
+<span class="">เบิกใช้ด่วน (จัดสรรตาม FEFO)</span>
+</button>
+<button class="w-11 h-11 rounded-xl bg-surface-subtle text-text-secondary flex items-center justify-center active:bg-surface-container transition-colors" title="ประวัติการเคลื่อนไหว Lot" type="button">
+<span class="material-symbols-outlined text-[20px]">history</span>
+</button>
+</div>
+</div>
+<!-- Item 3: Oxytetracycline Spray (Healthy Normal Stock) -->
+<div class="bg-surface-card rounded-2xl p-space-md shadow-sm flex flex-col gap-space-md relative overflow-hidden">
+<div class="flex items-start gap-space-md">
+<div class="relative w-16 h-16 rounded-xl bg-surface-subtle flex items-center justify-center shrink-0 overflow-hidden shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Veterinary wound spray aluminum canister with blue nozzle, Oxytetracycline topical formulation on a clean clinic metal table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxmuPnbVpzRgSXfvvRqIcKgS3L28zCQFEgg5bNBxBcGAYzeUIOTl-vB7rEMCF_PSo5_07D2ssIdg59j76OI3lXpoIf9ZoZzDyfuN5cCIHxHnDj09PGF38dwKt_hvycNstXi2lJ4uklhIpN8C8QLt4D2rN2J6V3g3lCrWdTNIhAAP-fSQNeybra30ldbalMoie3ZU9rravskf8N11bdLc5i7Z-k5PvbI71-cP6seHG7BCVjC478Zl2A">
+<span class="absolute bottom-1 right-1 bg-surface-container-highest text-on-surface font-label-sm text-label-sm px-1 rounded">ยาพ่น</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-text-primary font-bold truncate">Oxytetracycline Spray</h2>
+<span class="font-body-sm text-body-sm text-text-muted">ยาทาและพ่นแผลสดภายนอก</span>
+</div>
+<span class="shrink-0 inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-status-normal-surface text-status-normal font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-status-normal">
+</span>
+                ปกติ
+              </span>
+</div>
+<div class="mt-space-xs flex flex-wrap items-center gap-y-1 gap-x-space-md text-text-secondary font-label-sm text-label-sm">
+<span class="bg-surface-subtle px-2 py-0.5 rounded text-text-muted font-code-token text-code-token">Lot: LOT-2024-C01</span>
+<span class="">บรรจุ: 200 ml</span>
+</div>
+</div>
+</div>
+<!-- Inventory Metrics Table Layout -->
+<div class="bg-surface-subtle rounded-xl p-space-sm grid grid-cols-2 gap-space-sm text-center">
+<div class="flex flex-col items-center justify-center py-1">
+<span class="font-label-sm text-label-sm text-text-muted">ยอดคงเหลือสุทธิ</span>
+<div class="flex items-baseline gap-space-xs mt-0.5">
+<span class="font-headline-md text-headline-md font-bold text-text-primary">24</span>
+<span class="font-body-sm text-body-sm text-text-secondary">กระป๋อง</span>
+</div>
+<span class="font-label-sm text-label-sm text-status-normal font-bold">ปกติ (เกินขั้นต่ำ 10)</span>
+</div>
+<div class="flex flex-col items-center justify-center py-1">
+<span class="font-label-sm text-label-sm text-text-muted">วันหมดอายุ (EXP)</span>
+<span class="font-headline-sm text-headline-sm font-bold text-text-primary mt-0.5">20/08/2026</span>
+<span class="font-label-sm text-label-sm text-status-normal">เหลือ 530 วัน</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 h-11 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold flex items-center justify-center gap-space-xs shadow-sm active:opacity-90" type="button">
+<span class="material-symbols-outlined text-[18px]">colorize</span>
+<span class="">เบิกใช้รักษา</span>
+</button>
+<button class="w-11 h-11 rounded-xl bg-surface-subtle text-text-secondary flex items-center justify-center active:bg-surface-container transition-colors" title="ประวัติการเคลื่อนไหว Lot" type="button">
+<span class="material-symbols-outlined text-[20px]">history</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Section 23/Workflow B: Bottom Dispatch Guidance Floating Bar -->
+<div class="mt-space-md p-space-md rounded-2xl bg-surface-card shadow-sm flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-on-primary-fixed shrink-0">
+<span class="material-symbols-outlined text-[22px]">receipt_long</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-text-primary font-bold truncate">รายงานสรุปคลังประจำสัปดาห์</span>
+<span class="font-body-sm text-body-sm text-text-muted truncate">ส่งออกไฟล์รายงานยาคงเหลือ &amp; FEFO</span>
+</div>
+</div>
+<button class="px-space-md py-2 rounded-xl bg-surface-subtle hover:bg-surface-container text-text-secondary font-label-md text-label-md font-bold shrink-0 flex items-center gap-1 active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span class="">Export</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for tab filtering
+  document.querySelectorAll('button[type="button"]').forEach(btn => {
+    btn.addEventListener('click', function() {
+      // Haptic bounce illusion
+      this.classList.add('scale-95');
+      setTimeout(() => this.classList.remove('scale-95'), 120);
+    });
+  });
+</script>
+</main>
+<nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-card/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary font-bold">
+<div class="relative flex items-center justify-around h-16 px-space-xs">
+<a class="flex flex-col items-center justify-center w-14 h-12 gap-space-xs text-text-muted hover:text-text-primary transition-colors" data-path="dashboard" href="index.html">
+<span class="material-symbols-outlined text-[22px]">dashboard</span>
+<span class="font-label-sm text-label-sm truncate">แดชบอร์ด</span>
+</a>
+<a class="flex flex-col items-center justify-center w-14 h-12 gap-space-xs text-text-muted hover:text-text-primary transition-colors" data-path="medical-cases" href="cases.html">
+<span class="material-symbols-outlined text-[22px]">medical_services</span>
+<span class="font-label-sm text-label-sm truncate">เคสรักษา</span>
+</a>
+<div class="relative flex items-center justify-center w-12 h-12">
+<a aria-label="บันทึกด่วน" class="absolute -top-5 flex items-center justify-center w-12 h-12 rounded-full bg-primary-container text-on-primary shadow-lg active:scale-95 transition-transform" data-path="quick-log" href="#quick-log">
+<span class="material-symbols-outlined text-[26px]">add</span>
+</a>
+</div>
+<a class="flex flex-col items-center justify-center w-14 h-12 gap-space-xs text-text-muted hover:text-text-primary transition-colors" data-path="pharmacy-stock" href="medicine.html">
+<span class="material-symbols-outlined text-[22px]">medication</span>
+<span class="font-label-sm text-label-sm truncate">เวชภัณฑ์</span>
+</a>
+<a class="flex flex-col items-center justify-center w-14 h-12 gap-space-xs text-text-muted hover:text-text-primary transition-colors" data-path="livestock-barns" href="livestock.html">
+<span class="material-symbols-outlined text-[22px]">pets</span>
+<span class="font-label-sm text-label-sm truncate">คอกสัตว์</span>
+</a>
+</div>
+</nav>
+
+</body>
+</html>
